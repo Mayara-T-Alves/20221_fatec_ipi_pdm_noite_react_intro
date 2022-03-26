@@ -3,15 +3,17 @@ import ReactDOM from 'react-dom'
 
 const App = () => {
     return (
-        <div>
-            Meu primeiro componente React.
+        <div style={{ margin: 'auto', width: 768, backgroundColor: '#EEE', padding: 12, borderRadius: 8 }}>
+            <label htmlFor="nome" style={{ display: 'block', marginBotton: 4}}>Nome:</label>
+            <input id='nome' type="text" style={{ paddingTop: 8, paddingBottom: 8, borderStyle: 'hidden', outline: 'none', width: '100%' }} />
+            <button style={{ marginTop: 12, paddingTop: 8, paddingBottom: 8, backgroundColor: 'blueviolet', color: 'white', border: 'none', borderRadius: 8, widht: '100%' }}>Enviar</button>
         </div>
     )
 }
 
 
 ReactDOM.render(
-    <App/>,
+    <App />,
     // document.getElementById("root")
     document.querySelector("#root")
 )
